@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        .form {margin-left: 3%; border-collapse:collapse}
+        .send {text-align: center; background-color: skyblue}
+    </style>
+</head>
+<body>
+<section>
+    <form action="/" metod="post">
+        <table class="form" border="1">
+            <tbody>
+                <tr>
+                    <th id="fname">Last Name </th>
+                    <td><input type="text" name="fname" value="" size="30" required></td>
+                </tr>
+
+                <tr>
+                    <th id="lname">First Name </th>
+                    <td><input type="text" name="fname" value="" size="30" required> </td>
+                </tr>
+
+                <tr>
+                    <th>Address</th>
+                    <td><textarea rows="4" cols="30"></textarea></td>
+
+                </tr>
+
+                <tr>
+                    <th>City</th>
+                    <td>
+                        <input type="text" name="fname" value=""/>
+                        State
+                        <input type="text" name="fname" value="" size="5" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Zip/Post Code</th>
+                    <td>
+                        <input type="text" name="fname" value="" size="5" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Country</th>
+                    <td>
+                        <select>
+                            <option>Romania</option>
+                            <option>Greece</option>
+                            <option>Serbia</option>
+                            <option>Bulgaria</option>
+                            <option>Italy</option>
+                            <option>France</option>
+                            <option>Germany</option>
+                            <option>England</option>
+                            <option>Hungary</option>
+                            <option>Croatia</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Phone (country code, <br> area code, number)</th>
+                    <td>
+                        <input type="text" name="fname" value="" size="4" />
+                        <input type="text" name="fname" value="" size="4" />
+                        <input type="text" name="fname" value="" size="10" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Email</th>
+                    <td>
+                        <input type="email" name="fname" value="" size="30" required />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Birth Date</th>
+                    <td>
+                        <input type="date" name="fname" value="" required />
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <select>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th required>Starting Date </th>
+                    <td>
+                        <input type="radio" name="sdate" value="spring" />
+                        <label for="sdate">Spring 2015</label>
+                        <input type="radio" name="sdate" value="summer" />
+                        <label for="sdate">Summer 2015</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Comments/ Questions</th>
+                    <td>
+                        <textarea rows="6" cols="30" required></textarea>
+                    </td>
+                </tr>
+            </tbody>
+<tfood class="send">
+    <tr>
+        <td colspan="2">
+            <input type="submit" name="submit" value="Submit" />
+            <input type="reset" name="name" value="Clean this form" />
+
+        </td>
+    </tr>
+</tfood>
+
+        </table>
+
+    </form>
+
+
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notebook Store</title>
+    <style>
+        .head{font-size: 20px; text-align: center;}
+        .sidebar{float: right; padding-right: 3%;}
+        .article{width: 70%;}
+        .sidebar{margin-right: 3%;}
+        .product{width: 20%;}
+        .product #name{text-align: center; font-size: 18px;}
+        #list{margin-left: 10%;}
+        #price{text-align: center;}
+        #info{font-size: 20px;}
+
+    </style>
+
+    <script>
+        function outPutMinPrice (vol){
+            document.querySelector('#minprice').value=vol;
+        }
+        function outPutMaxPrice (vol){
+            document.querySelector('#maxprice').value=vol;
+        }
+        function outPutMinRam (vol) {
+            document.querySelector('#minram').value=vol;
+        }
+        function outPutMaxRam (vol) {
+            document.querySelector('#maxram').value=vol;
+        }
+
+    </script>
+
+</head>
+<body>
+    <section>
+        <fieldset>
+            <div class="head">
+                <a href="Problem%203.%20Notebook%20store.html">All</a>
+                <a href="Problem%203.%20Notebook%20store-Apple.html">Apple</a>
+                <a href="Problem%203.%20Notebook%20store-Toshiba.html">Toshiba</a>
+                <a href="Problem%203.%20Notebook%20store-Lenovo.html">Lenovo</a>
+                <a href="Problem%203.%20Notebook%20store-Dell.html">Dell</a>
+                <a href="Problem%203.%20Notebook%20store-Asus.html">Asus</a>
+                <a href="Problem%203.%20Notebook%20store-Acer.html">Acer</a>
+                <a href="Problem%203.%20Notebook%20store-HP.html">HP</a>
+
+            </div>
+            <fieldset>
+                <div class="sidebar">
+                    <p>
+                        Min price: <output for= "minprice" id="minprice"> 500 </output> USD <br/>
+                        <input id="sminprice" type="range" min="500" max="1500" step="50" oninput="outputMinPrice(value)"/>
+                    </p>
+                    <p>
+                        Max price: <output for="maxprice" id="maxprice">1500</output>USD<br/>
+                        <input id="smaxprice" type="range", min="500" max="1500" step="50" oninput="outputMaxPrice(value)"/>
+                    </p>
+                    <p>
+                        Min RAM:<output for="minRAM" id="minRAM">4</output> GB<br/>
+                        <input id="sminram" type="range" min="4" max="16" step="4" oninput="outMinRam(value)"/>
+                    </p>
+                    <p>
+                        Max Ram:<output for="maxRAM" id="MaxRAM">16</output>GB<br/>
+                        <input id="smaxram" type="range" min="4" max="16" step="4" oninput="outMaxRam(value)"/>
+                    </p>
+                </div>
+                <fieldset class="article">
+                    <table id="list">
+
+                        <tr>
+                            <td>
+                                <fieldset class="product">
+                                    <legend id="name">Apple MacBook Air</legend>
+                                    <table>
+                                    <tr>
+                                        <td>
+                                            <img src="Images/macbook.jpg" width="200" alt="Alternate text" />
+                                        </td>
+                                        <td id="info">
+                                            64GB SSD <br/>
+                                            2GB DDR <br/>
+                                            Intel Core i5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="price">1300 USD</td>
+                                    </tr>
+                                    </table>
+                                </fieldset>
+                            </td>
+
+                            <td>
+                                <fieldset class="product">
+                                    <legend id="name">Toshiba Satelite </legend>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="Images/toshiba.jpg" width="200" alt="Alterante text"/>
+                                            </td>
+                                            <td id="info">
+                                                64GB SSD <br/>
+                                                2GB DDR <br/>
+                                                Intel Core i5
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="price">
+                                                800 USD
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <fieldset class="product">
+                                    <legend id="name">Lenovo IdeaPad</legend>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="Images/lenovo.jpg" width="200" alt="Alternate text"/>
+                                            </td>
+                                            <td id="info">
+                                                64GB SSD <br/>
+                                                2GB DDR <br/>
+                                                Intel Core i5
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="price">
+                                                1000 USD
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+                            </td>
+                            <td>
+                                <fieldset class="product">
+                                    <legend id="name">Dell Inspirion</legend>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="Images/dell.jpg" width="200" alt="Alternate text"/>
+                                            </td>
+                                            <td id="info">
+                                                64GB SSD <br/>
+                                                2GB DDR <br/>
+                                                Intel Core i5
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="price">
+                                                1000 USD
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <>
+                            <td>
+                                <fieldset class="product">
+                                    <legend id="name">Asus ZenBook</legend>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="Images/asus.jpg" width="200" alt="Alternate text"/>
+                                            </td>
+                                            <td id="info">
+                                                64GB SSD <br/>
+                                                2GB DDR <br/>
+                                                Intel Core i5
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="price">
+                                                1200 USD
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+                            </td>
+                            <td>
+                                <fieldset class="product">
+                                    <legend id="name">HP Pavilion</legend>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="Images/HP.jpg" width="200" alt="Alterante text"/>
+                                            </td>
+                                            <td id="info">
+                                                64GB SSD <br/>
+                                                2GB DDR <br/>
+                                                Intel Core i5
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="price">
+                                                900 USD
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </fieldset>
+        </fieldset>
+    </section>
+</body>
+</html>
